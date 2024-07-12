@@ -63,9 +63,9 @@
         <StackPanel Grid.Row="1"
                     Grid.ColumnSpan="3">
             <Label x:Name="lblDigitalClock"
-                   FontSize="9"
+                   FontSize="11"
                    FontFamily="Roboto"
-                   Foreground="{StaticResource cs_background}"
+                   Foreground="{StaticResource cs_Text3}"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    Content="{Binding Path=Now, StringFormat='{}{0:hh:mm:ss tt}'}"/>
@@ -117,7 +117,7 @@
         <StackPanel Grid.Row="2"
                     Grid.Column="2"
             Margin="10">
-            <Image Source="/Images/humidite.png"
+            <Image Source="/Images/humidity.png"
                    
            Height="25"/>
             <Label x:Name="lblhumidity"

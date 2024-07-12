@@ -18,7 +18,7 @@ namespace WeatherApp_API
         [JsonProperty("temp_c")]
         public double TempC { get; set; }
         [JsonProperty("condition")]
-        public double Condition { get; set; }
+        public Condition Condition { get; set; }
         [JsonProperty("wind_kph")]
         public double WindKph { get; set; }
         [JsonProperty("humidity")]

@@ -116,8 +116,10 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Close.png" />
-    <Resource Include="Images\humidite.png" />
     <Resource Include="Images\Location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\humidity.png" />
     <Resource Include="Images\Temperature.png" />
     <Resource Include="Images\Wind.png" />
   </ItemGroup>
