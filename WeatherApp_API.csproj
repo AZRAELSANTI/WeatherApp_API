@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -55,6 +58,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="WeatherData.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -98,6 +102,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -110,12 +115,11 @@
     <Folder Include="Fonts\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\icons8-close-48.png" />
-    <Resource Include="Images\icons8-humidity-64.png" />
-    <Resource Include="Images\icons8-location-40.png" />
-    <Resource Include="Images\icons8-shutdown-64.png" />
-    <Resource Include="Images\icons8-temperature-48.png" />
-    <Resource Include="Images\icons8-wind-100.png" />
+    <Resource Include="Images\Close.png" />
+    <Resource Include="Images\humidite.png" />
+    <Resource Include="Images\Location.png" />
+    <Resource Include="Images\Temperature.png" />
+    <Resource Include="Images\Wind.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

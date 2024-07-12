@@ -35,7 +35,7 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <ImageBrush x:Key="Close_act" ImageSource="Images\icon8-shutdown-64.png"/>
+    <ImageBrush x:Key="Close_act" ImageSource="/Images/Close.png"/>
     <Style x:Key="CloseButtonStyle" TargetType="{x:Type Button}">
         <Setter Property="Height" Value="25"/>
         <Setter Property="Width" Value="25"/>
@@ -51,7 +51,7 @@
                             Background="{StaticResource Close_act}"/>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" TargetName="border" Value="{StaticResource Close-act}"/>
+                            <Setter Property="Background" TargetName="border" Value="{StaticResource Close_act}"/>
                             
                         </Trigger>
                         <Trigger Property="IsPressed" Value="True">
